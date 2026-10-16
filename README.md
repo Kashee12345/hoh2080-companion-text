@@ -5,7 +5,7 @@ Vermont State University Online.
 
 **Read it here:** https://kashee12345.github.io/hoh2080-companion-text/
 
-Seven chapters, roughly 64,000 words, 29 figures. Written to be read in place
+Seven chapters, roughly 62,000 words, 29 figures. Written to be read in place
 of a purchased textbook and free to students.
 
 ## What it covers

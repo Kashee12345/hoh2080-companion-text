@@ -2690,6 +2690,16 @@ main:focus{outline:none}
     if(m){ var n = parseInt(m[1], 10); if(n >= 1 && n <= chaps.length) state.at = n; }
   })();
 
+  /* A hash change inside a tab that is already open moves the reader too, so a
+     link from a weekly module lands on the right chapter even when the book is
+     already on screen. */
+  window.addEventListener('hashchange', function(){
+    var h = /^#ch-(\d{1,2})$/.exec(location.hash || '');
+    if(!h) return;
+    var k = parseInt(h[1], 10);
+    if(k >= 1 && k <= chaps.length) go(k);
+  });
+
   render();
 })();
 </script>
